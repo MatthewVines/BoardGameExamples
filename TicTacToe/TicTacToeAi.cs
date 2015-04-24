@@ -35,9 +35,9 @@ namespace TicTacToe
         }
 
         //  Heuristics used:
-        //      If there are 0 O's on the line, the score is 1^xCount
-        //      If there are 0 X's on the line, the score is -1^oCount
-        //      Which means that if the line is blank the score is 1 (because 1^0 = 1)
+        //      If there are 0 O's on the line, the score is 10^xCount
+        //      If there are 0 X's on the line, the score is -10^oCount
+        //      Which means that if the line is blank the score is 1 (because 10^0 = 1)
         //      If the line is full and not a winning line, or has both X and O, it is worth 0 points.  ie (XXO or XO-)
         private int ScoreLineForX(IEnumerable<char> positionStates)
         {
